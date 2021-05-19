@@ -119,7 +119,7 @@ public abstract class ExoPlayback<T extends Player> implements EventListener, Me
         int next = player.getNextWindowIndex();
 
         if(next == C.INDEX_UNSET) {
-            promise.reject("queue_exhausted", "There is no tracks left to play");
+            promise.reject("queue_exhausted", "There are no tracks left to play");
             return;
         }
 

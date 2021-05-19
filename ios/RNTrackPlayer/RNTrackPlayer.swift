@@ -358,7 +358,7 @@ public class RNTrackPlayer: RCTEventEmitter {
             try player.next()
             resolve(NSNull())
         } catch (_) {
-            reject("queue_exhausted", "There is no tracks left to play", nil)
+            reject("queue_exhausted", "There are no tracks left to play", nil)
         }
     }
     

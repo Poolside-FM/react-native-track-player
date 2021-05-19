@@ -179,7 +179,7 @@ namespace TrackPlayer.Players
             if (HasNext())
                 UpdateCurrentTrack(currentTrack + 1, promise);
             else
-                promise?.Reject("queue_exhausted", "There is no tracks left to play");
+                promise?.Reject("queue_exhausted", "There are no tracks left to play");
         }
 
         public void SkipToPrevious(IPromise promise)
